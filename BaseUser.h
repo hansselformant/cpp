@@ -1,3 +1,5 @@
+#ifndef BASEUSER_H
+#define BASEUSER_H
 #include <iostream>
 
 using namespace std;
@@ -16,3 +18,8 @@ class BaseUser
         void hello() const;
 
 };
+#endif // BASEUSER_H
+
+// class public AdminUser : public BaseUser {
+//     void helloAdmin() const;
+// }

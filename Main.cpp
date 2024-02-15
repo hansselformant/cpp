@@ -1,14 +1,18 @@
 #include <iostream>
 #include "BaseUser.h"
+#include "AdminUser.h"
 
 using namespace std;
 
 int main()
 {
-    BaseUser admin;
-    admin.setUserName("felipe");
-    admin.setPassword("Admin123");
-    cout << "su usuario es: " << admin.getUserName() << ", su password es" << admin.getPassword() << endl; 
-    // admin.hello();
+    BaseUser user;
+    user.setUserName("felipe");
+    user.setPassword("User123");
+    cout << "su usuario es: " << user.getUserName() << ", su password es" << user.getPassword() << endl; 
+    AdminUser admin;
+    admin.helloAdmin();
+    admin.setUserName("admin");
+    cout << "hello SR: " << admin.getUserName() << endl;
     return 0;
 }
